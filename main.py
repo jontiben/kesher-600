@@ -83,10 +83,13 @@ def get_value(string, charid, gematria):
 
 
 def calculate(event, gematria):
+    global sub_total
+    sub_total = 0 # For Mispar Bone'eh
     total = 0
     val_text, char_text = "", ""
     skip_iteration = False
     input_text = input_field.get().replace(u'\u200e', '').replace('\n','').lower().strip()
+
     for c, char in enumerate(input_text):
         if skip_iteration:
             skip_iteration = False
@@ -97,9 +100,15 @@ def calculate(event, gematria):
             if char_analysis != "skip":
                 char_string = char_analysis[0]
                 char_value = char_analysis[1]
+                if script_selection == 1 and "bone'eh" in gematria.keys():  # Hacky way to find Mispar Bone'eh
+                    char_value += sub_total
+                    sub_total = char_value
                 total += char_value
                 if script_selection == 1:  # Hebrew
-                    val_text += " " * (4 - len(str(char_value)))+str(char_value)[::-1]
+                    if "hamerubah" not in gematria.keys():
+                        val_text += str(char_value)[::-1] + " " * (4 - len(str(char_value)))
+                    else:
+                        val_text += "   *"
                 else:
                     val_text += str(char_value) + " " * (4 - len(str(char_value)))
                 if len(char_string) == 2:
@@ -113,6 +122,8 @@ def calculate(event, gematria):
             char_text += char.upper() + " " * (4 - len(char))
     if script_selection == 1: # Hebrew
         val_text = val_text[::-1]
+    if "hamerubah" in gematria.keys():
+        total = total ** 2
     return val_text, char_text, total
 
 
