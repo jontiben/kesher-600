@@ -7,7 +7,7 @@ script_selection = 0  # 0 is Latin, 1 is Hebrew, 2 is Greek
 gematria_dict = ALL_GEMATRIA[script_selection]["Ordinal"]
 
 root = tk.Tk()
-root.title("Gematria Calculator")
+root.title("Kesher 600")
 root.geometry(f"{START_WIDTH}x{START_HEIGHT}")
 root.configure(background=BG_COLOR)
 
