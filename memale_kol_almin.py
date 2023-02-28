@@ -1,12 +1,13 @@
 from l_letter_values import *
 from h_letter_values import *
-from g_letter_values import *
+from y_letter_values import *
 
-START_WIDTH = 1000
-START_HEIGHT = 600
+ROCHAV_SHEL_BERIAH = 1000
+GOVAH_SHEL_BERIAH = 600
 
-SCRIPTS = ["Latin", "Hebrew", "Greek"]
-L_TYPES = {
+SAFOT = ["Latin", "Hebrew", "Greek"]
+
+LAMED_SUGIM = {
     "Ordinal": l_ordinal,
     "Reduction": l_reduction,
     "Reverse": l_reverse,
@@ -14,7 +15,7 @@ L_TYPES = {
     "Golden Dawn": l_golden_dawn,
 }
 
-H_TYPES = {
+AYIN_SUGIM = {
     "Mispar Hechrechi (standard)": h_standard,
     "Mispar Hechrechi-Niqqud (with vowels)": h_standard_with_niqqud,
     "Misp. Hech.-S'chum-Niq. (vowel dig. sum)": h_standard_with_niqqud_digit_sum,
@@ -33,23 +34,23 @@ H_TYPES = {
     "Mispar Mispari (values of number names)": h_recursive,
 }
 
-G_TYPES = {
+YOD_SUGIM = {
     "Isopsephy (standard)": g_standard,
     "Ordinal": g_ordinal,
 }
 
-L_NORMAL_SUBSTITUTION = l_normal_substitution
-H_NORMAL_SUBSTITUTION = h_normal_substitution
-H_VOWEL_SUBSTITUTION = h_niqqud_substitution
-G_NORMAL_SUBSTITUTION = g_normal_substitution
+LAMED_KORBAN = l_korban
+AYIN_KORBAN = h_korban
+AYIN_KORBAN_SHEL_TNUOT = k_korban_shel_niqqud
+YOD_KORBAN = y_korban
 
-ALL_NORMAL_SUBSTITUTION = [L_NORMAL_SUBSTITUTION, H_NORMAL_SUBSTITUTION, G_NORMAL_SUBSTITUTION]
+KORBAN_MSHUTAF = [LAMED_KORBAN, AYIN_KORBAN, YOD_KORBAN]
 
-ALL_GEMATRIA = [L_TYPES, H_TYPES, G_TYPES]
+GIMATRIOT = [LAMED_SUGIM, AYIN_SUGIM, YOD_SUGIM]
 
-BG_COLOR = "gray7"
-PADX = 5
-PADY = 5
-BUTTON_FONTSIZE = 20
-VAL_FONTSIZE = 12
-INPUT_FONTSIZE = VAL_FONTSIZE+4
+TSEVA_SHEL_OR = "gray7"
+GODEL_SHEL_OHR_MAKIF_OFKIYUT = 5
+GODEL_SHEL_OHR_MAKIF_ANAKHIYUT = 5
+GODEL_SHEL_MALKUTH = 20
+GODEL_SHEL_MISPARAYIM = 12
+GODEL_SHEL_KTIVA = GODEL_SHEL_MISPARAYIM + 4

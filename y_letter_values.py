@@ -1,4 +1,4 @@
-g_normal_substitution = {
+y_korban = {
     "ς": "σ",
 }
 

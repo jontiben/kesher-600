@@ -1,5 +1,5 @@
 # Hebrew
-h_normal_substitution = {
+h_korban = {
     # Cantillation below
     "׃":"",
     "׀":"",
@@ -63,7 +63,7 @@ h_normal_substitution = {
 
 }
 
-h_niqqud_substitution = {
+k_korban_shel_niqqud = {
     # Niqqud below
     "ְ": "",
     "ֱ": "",

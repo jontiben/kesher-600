@@ -1,5 +1,5 @@
 # Latin
-l_normal_substitution = {
+l_korban = {
     'á': 'a',
     'à': 'a',
     'â': 'a',
