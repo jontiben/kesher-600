@@ -25,7 +25,7 @@ AYIN_SUGIM = {
     "Mispar Perati (squared)": h_squared,
     "Mispar Meshulash (cubed)": h_cubed,
     "Mispar Shemi (shemi full name)": h_shemi,
-    "Mispar Kidmi/Meshulash (triangular)": h_triangular,
+    "Mispar Kidmi (triangular)": h_triangular,
     "Mispar Bone'eh (building)": h_building,
     "Mispar Ne'elam-Shemi (hidden)": h_hidden,
     "Mispar haMerubah HaKlali (total squared)": h_total_squared,
