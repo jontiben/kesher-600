@@ -60,6 +60,7 @@ h_normal_substitution = {
     " ‎": "", # Repeats
     "׃‎": "",
     "׆‎": "",
+
 }
 
 h_niqqud_substitution = {
@@ -77,6 +78,7 @@ h_niqqud_substitution = {
     "ֻ": "",
     "ּ": "",
     "ֿ": "",
+    b'\\u05c1': "",
 }
 
 h_standard = { # Mispar hechrechi

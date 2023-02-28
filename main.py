@@ -38,7 +38,11 @@ def get_value(string, charid, gematria):
     char = string[charid]
     if len(char) == 0:
         return "skip"
-    if script_selection == 1 and "ִ" not in gematria.keys(): # Vowel-important script
+    char_encode = char.encode('unicode_escape')
+    if script_selection == 1 and "ִ" not in gematria.keys(): # Vowel-unimportant script
+        if char_encode in H_VOWEL_SUBSTITUTION.keys():
+            old_char = char
+            char = char_encode
         if char in H_VOWEL_SUBSTITUTION.keys():
             char = H_VOWEL_SUBSTITUTION[char]
             temp_full_string = string[:charid] + char + string[charid+1:]
@@ -82,7 +86,7 @@ def calculate(event, gematria):
     total = 0
     val_text, char_text = "", ""
     skip_iteration = False
-    input_text = input_field.get().replace(u'\u200e', '').replace('\n','').lower()
+    input_text = input_field.get().replace(u'\u200e', '').replace('\n','').lower().strip()
     for c, char in enumerate(input_text):
         if skip_iteration:
             skip_iteration = False
