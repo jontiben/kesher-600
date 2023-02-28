@@ -26,12 +26,12 @@ AYIN_SUGIM = {
     "Mispar Meshulash (cubed)": h_cubed,
     "Mispar Shemi (shemi full name)": h_shemi,
     "Mispar Kidmi/Meshulash (triangular)": h_triangular,
-    "AtBash": h_atbash,
-    "AlBam": h_albam,
     "Mispar Bone'eh (building)": h_building,
     "Mispar Ne'elam-Shemi (hidden)": h_hidden,
     "Mispar haMerubah HaKlali (total squared)": h_total_squared,
     "Mispar Mispari (values of number names)": h_recursive,
+    "AtBash": h_atbash,
+    "AlBam": h_albam,
 }
 
 YOD_SUGIM = {
