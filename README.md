@@ -39,3 +39,5 @@ keter.pyw is the main project file.
 
 
 For questions, comments, and complaints please contact jontiben#7855 on Discord
+
+This was written entirely in Python, using Tkinter for the UI.
