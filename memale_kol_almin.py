@@ -13,6 +13,7 @@ LAMED_SUGIM = {
     "Reverse": l_reverse,
     "Reverse-Reduction": l_reverse_reduction,
     "Golden Dawn": l_golden_dawn,
+    "Agrippa's Occult": l_agrippa_occult,
 }
 
 AYIN_SUGIM = {

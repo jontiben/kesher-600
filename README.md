@@ -13,6 +13,7 @@ keter.pyw is the main project file.
 - Reverse(-Ordinal) (a=26, b=25, ... z=1)
 - Reverse-Reduction (a=8, b=7, ... h=1, i=9, ...)
 - Golden Dawn (https://en.wikipedia.org/wiki/Mathers_table)
+- Heinrich Cornelius Agrippa's Occult (https://en.m.wikipedia.org/wiki/File:Agrippan_numerology_table.jpg)
 
 ### Hebrew Alphabet:
 (https://torahcalc.com/info/gematria/)

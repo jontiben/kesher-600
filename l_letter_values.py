@@ -206,3 +206,36 @@ l_golden_dawn = {
     '#ts': 900,
     '#tz': 900,
 }
+
+l_agrippa_occult = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+    "d": 4,
+    "e": 5,
+    "f": 6,
+    "g": 7,
+    "h": 8,
+    "i": 9,
+    "k": 10,
+    "l": 20,
+    "m": 30,
+    "n": 40,
+    "o": 50,
+    "p": 60,
+    "q": 70,
+    "r": 80,
+    "s": 90,
+    "t": 100,
+    "u": 200,
+    "v": 200,
+    "x": 300,
+    "y": 400,
+    "z": 500,
+    "j": 600,
+    # special cases require a modification to the program to recognize word-initial strings
+    #"#i": 600, # confirm that it's always word-initial
+    #"#v": 700, # confirm that it's always word-initial
+    "hi": 800,
+    "hv": 900
+}
